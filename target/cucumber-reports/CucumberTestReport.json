@@ -1,0 +1,183 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2577389200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Retail website",
+            "match": {
+              "location": "LoginTestStepDefinition.user_is_on_Retail_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6894862900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Register Account for new Retail user",
+        "description": "",
+        "id": "retail-test-scenarios;register-account-for-new-retail-user",
+        "after": [
+          {
+            "result": {
+              "duration": 663880300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67252700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click  on MyAccount",
+            "match": {
+              "location": "LoginTestStepDefinition.user_click_on_MyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3180300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Register",
+            "match": {
+              "location": "RegisterFormStepDefinition.user_click_on_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2108000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User fill out Register form with below information",
+            "match": {
+              "location": "RegisterFormStepDefinition.user_fill_out_Register_form_with_below_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "phone",
+                  "password"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "James",
+                  "Madison",
+                  "jmadison@test.com",
+                  "1112223344",
+                  "james123"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User select \u0027yes\u0027 for Subscribe",
+            "match": {
+              "location": "RegisterFormStepDefinition.user_select_yes_for_Subscribe()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on privacy and policy check box",
+            "match": {
+              "location": "RegisterFormStepDefinition.user_click_on_privacy_and_policy_check_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click on Continue button",
+            "match": {
+              "location": "RegisterFormStepDefinition.user_click_on_Continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2918900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User Should see message \u0027Your Account Has Been Created!\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your Account Has Been Created!",
+                  "offset": 25
+                }
+              ],
+              "location": "RegisterFormStepDefinition.user_Should_see_message_Your_Account_Has_Been_Created(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@RegisterForm"
+          }
+        ]
+      }
+    ],
+    "name": "Retail Test Scenarios",
+    "description": "",
+    "id": "retail-test-scenarios",
+    "keyword": "Feature",
+    "uri": "Features/RetailTestScenarios.feature"
+  }
+]
